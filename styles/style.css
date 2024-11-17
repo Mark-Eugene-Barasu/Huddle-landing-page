@@ -179,6 +179,9 @@ I started with Desktop approach first
 }
 
 @media screen and (max-width: 375px) {
+    .generalContainer {
+        background-image: url("../images/bg-mobile.svg");
+    }
     .headerContainer {
         display: flex;
         flex-direction: column;
