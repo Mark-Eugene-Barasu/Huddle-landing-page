@@ -1,6 +1,9 @@
 # Avoid accidental Sketch file upload 
 ###############################################
 ## Please do not remove line 5 - thanks! 🙂 ##
+
+# A .sketch file is a file created in the Sketch app, which is used to design the user interface (UI) and user experience (UX) for mobile apps and websites
+
 ###############################################
 *.sketch
 
