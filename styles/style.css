@@ -1,0 +1,221 @@
+
+html,
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+a {
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 18px;
+
+    color: white;
+}
+
+a:hover {
+    color: violet;
+    /* border-radius: 5px; */
+}
+
+.generalContainer {
+    background-color: #674BB1;
+    min-height: 100vh;
+    background-image: url("../images/bg-desktop.svg");
+    /* background: linear-gradient(135deg, #8763eaa4, rgba(52, 234, 11, 0.587) ), url("../images/bg-desktop.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    width: 100vw;
+}
+
+.icons {
+    box-sizing: border-box;
+    color: white;
+    margin-right: 25px;
+}
+
+.icons ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+
+.icons ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 0px 20px;
+    margin: 2px;
+}
+
+i {
+    border: 1.5px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    width: 40px;
+    height: 32px;
+}
+
+i:hover {
+    color: deeppink;
+    border: 1.5px solid deeppink;
+}
+
+.headerContainer {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    font-family: Poppins;
+    font-weight: 600; /* 400 for mobile */
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 50px;
+    margin-bottom: 50px
+}
+
+.logoContainer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigationContainer {
+    margin-left: 600px ;
+}
+
+.imageTextContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+}
+
+.imageContainer img{
+    width: 40vw;
+}
+
+.textContainer {
+    max-width: 500px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0px
+}
+
+button {
+    height: 50px;
+    width: 220px;
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+    color: #674BB1;
+    font-family: poppins
+}
+
+button:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+
+
+
+/* ~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~ */
+
+.attribution {
+    font-size: 11px; /* I will like 20px instead*/
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+.attribution a {
+    color:hsl(300, 69%, 71%);
+    /* background-color: rgba(255, 255, 255, 0.548);
+    border-radius: 5px; */
+}
+
+/*   RESPONSIVENESS  
+I started with Desktop approach first
+- Mobile: 375px 
+- Desktop: 1440px 
+*/
+@media screen and (max-width: 1440px) {
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    .logoContainer {
+        width: 80vw;
+        margin: 0px 10%;
+    }
+
+    .navigationContainer {
+        margin: 0px 10%;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    .logoContainer {
+        width: 100vw;
+        margin: 0px 10%;
+    }
+
+    .navigationContainer {
+        margin: 0px 10%;
+        width: 100vw;
+    }
+
+    .imageTextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    .imageContainer img {
+        width: 80%;
+        margin-left: -2%;
+    }
+
+    .textContainer {
+        margin-left: -12%;
+        width: 80%;
+    }
+}
